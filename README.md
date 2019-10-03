@@ -9,7 +9,7 @@ This library is used to validate the laravel form with ajax and verify the form 
 4. Add Csrf-token in header of your html page (Required any 1 of these two);
 	- Add meta tag to your header
     ```
-	meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
     ```
    
 	- (Highly Recomended) Create a function that return your csrf token dynamic if any request crash, dump or fail or when you debug your code
