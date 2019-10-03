@@ -28,6 +28,7 @@ public function refreshToken() {
 # Uses:
 1. Add LaravelAjaxValidator.js to your header.
 2. setup library
+```
     phpdev.setup({
         underfieldError: false,
         showBorderError: true,
@@ -35,10 +36,13 @@ public function refreshToken() {
         csrfTokenUrl: 'refreshToken', //this must be full url
         notifyError: true
     });
+```
 3. Add class 'ajaxForm' to form tag.
 3. done.
 
+# Options:
 
+```
 Param                               Default                             Description
 
 debug                               false                                   As a developer for testing purple it will return database error and any other error that occur when submit the form.
@@ -51,3 +55,4 @@ separateMessage                     false                                   If y
 loaderClass                         'loader-div'                            When a form is validated by ajax it will take some time this is not good for front end user to wait so if you already have a loader added in your main layout then you can define your own here so the loder will show every time it check the form validation and loader will automatic hide when ajax is complete.
 csrfTokenUrl                        null                                    If you already added the function from point 4.2 to refresh the token you can define the route here.
 refreshCsrfToken                    false                                   If you want to refresh csrf token on every fail ajax.
+```
