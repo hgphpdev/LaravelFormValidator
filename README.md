@@ -36,7 +36,7 @@ This library is used to validate the laravel form with ajax and verify the form 
         notifyError: true
     });
 ```
-3. Add class 'ajaxForm' to form tag.
+3. Add class '**ajaxForm**' to form tag.
 3. done.
 
 # Options:
