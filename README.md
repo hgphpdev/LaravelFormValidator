@@ -39,15 +39,20 @@ This library is used to validate the laravel form with ajax and verify the form 
 3. Add class '**ajaxForm**' to form tag.
 3. done.
 
+# Advantage & Disadvantageg
+ 1. It can also validate laravel array value for validator.
+ 2. It cannot Submit file if there is file input in the form, you can add file name just like any input field.
+
+
 # Options:
 
 ```
 Param                               Default                             Description
 
-debug                               false                                   As a developer for testing purple it will return database error and any other error that occur when submit the form.
-showBorderError                     true                                     It will show error if validation fail on any input field.
-underfieldError                     true                                     It will show error under the input field in the span tag
-notifyError                         false                                    This will show a noty popup when if any error occur
+debug                               false                                   As a developer for testing purpose it will return database error and any other error that occur when submit the form.
+showBorderError                     true                                    It will show error if validation fail on any input field.
+underfieldError                     true                                    It will show error under the input field in the span tag
+notifyError                         false                                   This will show a noty popup when if any error occur
 maxNoty                             1                                       This will show maximum number of notification at once
 pleaseContactToAdmin                'Please contact admin for more info'    If debug is false and site is in development but still some error occur then it will show the default message
 separateMessage                     false                                   If you want to show all message in different different noty then you can set this to true and increase max number of noty from one to higher number.
