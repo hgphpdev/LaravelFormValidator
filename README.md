@@ -62,3 +62,4 @@ refreshCsrfToken                    false                                   If y
 ```
 # Donate
 paypal.me/hgphpdev
+<a href="paypal.me/hgphpdev" rel="some text">![Foo](https://github.com/hitugehlot22/LaravelFormValidator/blob/master/images.png?raw=true)</a>
