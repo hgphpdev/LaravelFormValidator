@@ -61,5 +61,4 @@ csrfTokenUrl                        null                                    If y
 refreshCsrfToken                    false                                   If you want to refresh csrf token on every fail ajax.
 ```
 # Donate
-paypal.me/hgphpdev
-<a href="paypal.me/hgphpdev" rel="some text">![Foo](https://github.com/hitugehlot22/LaravelFormValidator/blob/master/images.png?raw=true)</a>
+<a href="https://paypal.me/hgphpdev" rel="some text">![Foo](https://github.com/hitugehlot22/LaravelFormValidator/blob/master/images.png?raw=true)</a>
