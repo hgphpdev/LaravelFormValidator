@@ -60,3 +60,5 @@ loaderClass                         'loader-div'                            When
 csrfTokenUrl                        null                                    If you already added the function from point 4.2 to refresh the token you can define the route here.
 refreshCsrfToken                    false                                   If you want to refresh csrf token on every fail ajax.
 ```
+# Donate
+paypal.me/hgphpdev
