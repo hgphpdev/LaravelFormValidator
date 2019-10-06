@@ -39,6 +39,13 @@ This library is used to validate the laravel form with ajax and verify the form 
 3. Add class '**ajaxForm**' to form tag.
 3. done.
 
+# Additional Feature:
+ -Some time we need post request on href tag but we need to create form for that or write a ajax for that button to work as post request It can be easily done by simple define **data-method="Post"** in your href tag same as the code below, It will work as post.
+ 
+```
+<a href="yourUrl" data-method="post" >Click me</a>
+```
+
 # Advantage & Disadvantageg
  1. It can also validate laravel array value for validator.
  2. It cannot Submit file if there is file input in the form, you can add file name just like any input field. It will only send temporary file name.
