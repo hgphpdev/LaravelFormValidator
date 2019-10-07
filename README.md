@@ -22,7 +22,33 @@ This library is used to validate the laravel form with ajax and verify the form 
 	}
 
     ```
+5. After validate the form in your controller use this return function:
 
+    ```
+    /**
+     * Send return response when Ajax call on form submit
+     * 
+     * @param boolean   $cstatus    (Required)This will be true or false.
+     * @param string    $curl       (Optional)This is the page Url where to redirect after form submit successfully.
+     * @param string    $cmessage   (Optional)This is to show message on error. // This message is differenct from validation error message.
+     * @param array     $cdata      (Optional)In case if you want to send some data in return.
+     * @return array    This will return all param detail with array.
+     * 
+     * */
+     
+    public function sendResponse($cstatus, $curl = '', $cmessage = '', $cdata = []) {
+        return [
+            'status' => $cstatus,
+            'url' => $curl,
+            'message' => $cmessage,
+            'data' => $cdata,
+        ];
+    }
+    ```
+    (Recomended to use upper code in parent controller and call a function like following code):
+    ```
+    return $this->sendResponse($status, $url, $message, $data)
+    ```
 
 # Uses:
 1. Add LaravelAjaxValidator.js to your header.
