@@ -36,12 +36,13 @@ This library is used to validate the laravel form with ajax and verify the form 
      * 
      * */
      
-    public function sendResponse($cstatus, $curl = '', $cmessage = '', $cdata = []) {
+    public function sendResponse($cstatus, $curl = '', $cmessage = '', $cdata = [], $function = '') {
         return [
             'status' => $cstatus,
             'url' => $curl,
             'message' => $cmessage,
             'data' => $cdata,
+	    'function' => $function
         ];
     }
     ```
