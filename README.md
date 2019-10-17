@@ -28,21 +28,21 @@ This library is used to validate the laravel form with ajax and verify the form 
     /**
      * Send return response when Ajax call on form submit
      * 
-     * @param boolean   $cstatus    (Required)This will be true or false.
-     * @param string    $curl       (Optional)This is the page Url where to redirect after form submit successfully.
-     * @param string    $cmessage   (Optional)This is to show message on error. // This message is differenct from validation error message.
-     * @param array     $cdata      (Optional)In case if you want to send some data in return.
+     * @param boolean   $cstatus    This will be true or false.
+     * @param string    $curl       This is the page Url where to redirect after form submit successfully.
+     * @param string    $cmessage   This is to show message on error.
+     * @param array     $cdata      Just in case if you want to send some data in return.
+     * @param array     $function      This function will call in javascript like hgphpdev(param) (this is your custom function and param will be your data you send).
      * @return array    This will return all param detail with array.
      * 
      * */
-     
     public function sendResponse($cstatus, $curl = '', $cmessage = '', $cdata = [], $function = '') {
         return [
             'status' => $cstatus,
             'url' => $curl,
             'message' => $cmessage,
             'data' => $cdata,
-	    'function' => $function
+            'function' => $function
         ];
     }
     ```
