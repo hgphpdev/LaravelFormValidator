@@ -67,10 +67,10 @@ This library is used to validate the laravel form with ajax and verify the form 
 3. done.
 
 # Additional Feature:
- -Some time we need post request on href tag but we need to create form for that or write a ajax for that button to work as post request It can be easily done by simple define **data-method="Post"** in your href tag same as the code below, It will work as post. If you want to add custom confirm message before delete or any other action, define **data-confirm-message** in this tag.
+ -Some time we need post request on href tag but we need to create form for that or write a ajax for that button to work as post request It can be easily done by simple define **data-method="Post"** in your href tag same as the code below, It will work as post. If you want to add custom confirm message before delete or any other action, define **data-confirm-message** in this tag.Normally it will refresh the page but if you want to not to refresh the page then add **ajaxForm** in **data-class** in the tag like given below.
  
 ```
-<a href="yourUrl" data-confirm-message="enter your message here" data-method="post" >Click me</a>
+<a href="yourUrl" data-confirm-message="enter your message here" data-method="post" data-class="ajaxForm">Click me</a>
 ```
 
 # Advantage & Disadvantages
